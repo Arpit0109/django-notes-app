@@ -3,6 +3,12 @@ pipeline{
     agent { label 'dev-server'}
     
     stages{
+        stage("hellow")
+        {
+            steps{
+                echo "hellow"
+            }
+        }
         stage("Code clone"){
             steps{
                 sh "whoami"
